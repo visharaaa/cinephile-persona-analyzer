@@ -20,3 +20,8 @@ Building the Letterboxd scraper involved navigating several layers of bot protec
 - **Method:** Parsing the user's public RSS feed using `BeautifulSoup` and `lxml`.
 - **Result:** Fast, reliable, and bypasses all browser-based blocks.
 - **Outcome:** Successfully retrieved ~50 recent film entries including titles and ratings without triggering security flags.
+
+### Phase 4: Data Enrichment (TMDB API)
+- **Method:** Developed `processor.py` to map Letterboxd titles to TMDB movie IDs.
+- **Data Points:** Extracted movie titles, release years, overviews, and popularity scores.
+- **Outcome:** Created a structured `user_movie_data.csv` dataset, forming the "corpus" for the AI Persona analysis.
