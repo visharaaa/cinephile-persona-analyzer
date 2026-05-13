@@ -25,3 +25,8 @@ Building the Letterboxd scraper involved navigating several layers of bot protec
 - **Method:** Developed `processor.py` to map Letterboxd titles to TMDB movie IDs.
 - **Data Points:** Extracted movie titles, release years, overviews, and popularity scores.
 - **Outcome:** Created a structured `user_movie_data.csv` dataset, forming the "corpus" for the AI Persona analysis.
+
+### Phase 5: AI Persona Analysis (NLP)
+- **Method:** Applied `TfidfVectorizer` from `scikit-learn` to perform thematic extraction on movie metadata.
+- **NLP Techniques:** Used stop-word filtering and n-gram analysis to identify unique cinematic fingerprints.
+- **Outcome:** Automated generation of a "Cinephile Persona" based on recurring narrative patterns.
