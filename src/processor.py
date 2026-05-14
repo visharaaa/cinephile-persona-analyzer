@@ -2,8 +2,11 @@ import os
 import requests
 import pandas as pd
 from dotenv import load_dotenv
-from scraper import get_user_favorites # Importing your successful scraper
-
+try:
+    from src.scraper import get_user_favorites 
+except ImportError:
+    from scraper import get_user_favorites
+    
 # 1. Setup Environment
 load_dotenv()
 TMDB_API_KEY = os.getenv("TMDB_API_KEY")
