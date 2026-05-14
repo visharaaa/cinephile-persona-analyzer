@@ -30,3 +30,9 @@ Building the Letterboxd scraper involved navigating several layers of bot protec
 - **Method:** Applied `TfidfVectorizer` from `scikit-learn` to perform thematic extraction on movie metadata.
 - **NLP Techniques:** Used stop-word filtering and n-gram analysis to identify unique cinematic fingerprints.
 - **Outcome:** Automated generation of a "Cinephile Persona" based on recurring narrative patterns.
+
+### Phase 6: Web Implementation & UI Deployment
+- **Architecture:** Transitioned from CLI to a state-driven web application using **Streamlit**, implementing `session_state` for seamless multi-page navigation.
+- **System Integration:** Refactored project structure into a modular Python package with `__init__.py` to handle complex cross-directory imports.
+- **Dynamic Analysis:** Integrated the TF-IDF engine into the frontend to provide real-time thematic extraction from live Letterboxd data.
+- **UX Design:** Focused on a "High-Trust" experience by abstracting API complexity into a clean, single-input landing page.
